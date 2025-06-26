@@ -8,7 +8,7 @@ import Radio from "@components/Radio";
 import Accordion from "@components/Accordion";
 import Tree from "@components/Tree";
 import Chip from "@components/Chip";
-import { Tabs } from "@components/Tabs"; // ✅ import your reusable Tabs component
+import { Tabs } from "@components/Tabs";
 
 function App() {
   const [loading, setLoading] = useState(false);
