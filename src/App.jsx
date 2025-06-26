@@ -8,9 +8,6 @@ import Accordion from "@components/Accordion";
 import Tabs from "@components/Tabs";
 import Tree from "@components/Tree";
 import Chip from "@components/Chip";
-import { ToastProvider } from "@components/Toast/ToastProvider";
-import Testing from "@test/Testing";
-import LoginForm from "@formik/LoginForm";
 import { useState } from "react";
 
 function App() {
@@ -45,10 +42,6 @@ function App() {
 
   return (
     <div className="p-6 space-y-6 max-w-2xl mx-auto">
-      <LoginForm />
-      <ToastProvider>
-        <Testing />
-      </ToastProvider>
       {/* Typography */}
       <Typography variant="h1">Dashboard</Typography>
       <Typography variant="p">Welcome back! Here's your overview.</Typography>

@@ -1,7 +1,7 @@
 //custom hook to call toast
 
 import { useContext } from "react";
-import { ToastContextRef } from "./ToastProvider";
+import { ToastContextRef } from "../../../contexts/ToastProvider";
 
 export const useToast = () => {
   const context = useContext(ToastContextRef);
