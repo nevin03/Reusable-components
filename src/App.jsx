@@ -1,4 +1,4 @@
-import Button from "./component/shared/Button";
+import Button from "component/shared/Button";
 import Typography from "./component/shared/Typography";
 import Input from "./component/shared/Input";
 import Select from "./component/shared/Select";
