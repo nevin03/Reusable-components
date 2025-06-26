@@ -1,5 +1,3 @@
-//custom hook to call toast
-
 import { useContext } from "react";
 import { ToastContextRef } from "../../../contexts/ToastProvider";
 
