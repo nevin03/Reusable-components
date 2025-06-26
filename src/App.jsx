@@ -1,17 +1,18 @@
-import Button from "./components/shared/Button";
-import Typography from "./components/shared/Typography";
-import Input from "./components/shared/Input";
-import Select from "./components/shared/Select";
-import Checkbox from "./components/shared/Checkbox";
-import Radio from "./components/shared/Radio";
-import Accordion from "./components/shared/Accordion";
-import Tabs from "./components/shared/Tabs";
-import Tree from "./components/shared/Tree";
-import Chip from "./components/shared/Chip";
-import { ToastProvider } from "./components/shared/Toast/ToastProvider";
-import Testing from "./components/Test/Testing";
+import Button from "@components/Button";
+import Typography from "@components/Typography";
+import Input from "@components/Input";
+import Select from "@components/Select";
+import Checkbox from "@components/Checkbox";
+import Radio from "@components/Radio";
+import Accordion from "@components/Accordion";
+import Tabs from "@components/Tabs";
+import Tree from "@components/Tree";
+import Chip from "@components/Chip";
+import { ToastProvider } from "@components/Toast/ToastProvider";
+import Testing from "@test/Testing";
+import LoginForm from "@formik/LoginForm";
 import { useState } from "react";
-import LoginForm from "./components/shared/Formik/LoginForm";
+
 function App() {
   const [loading, setLoading] = useState(false);
 
