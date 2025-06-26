@@ -1,4 +1,4 @@
-import useAuthStore from "../stores/useAuthStore";
+import useAuthStore from "./useAuthStore";
 
 export const useAuth = () => {
   const { user, token, isAuthenticated, login, logout } = useAuthStore();
