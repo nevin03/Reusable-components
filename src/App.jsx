@@ -1,17 +1,17 @@
-import Button from "component/shared/Button";
-import Typography from "./component/shared/Typography";
-import Input from "./component/shared/Input";
-import Select from "./component/shared/Select";
-import Checkbox from "./component/shared/Checkbox";
-import Radio from "./component/shared/Radio";
-import Accordion from "./component/shared/Accordion";
-import Tabs from "./component/shared/Tabs";
-import Tree from "./component/shared/Tree";
-import Chip from "./component/shared/Chip";
-import { ToastProvider } from "./component/shared/Toast/ToastProvider";
-import Testing from "./component/Test/Testing";
+import Button from "./components/shared/Button";
+import Typography from "./components/shared/Typography";
+import Input from "./components/shared/Input";
+import Select from "./components/shared/Select";
+import Checkbox from "./components/shared/Checkbox";
+import Radio from "./components/shared/Radio";
+import Accordion from "./components/shared/Accordion";
+import Tabs from "./components/shared/Tabs";
+import Tree from "./components/shared/Tree";
+import Chip from "./components/shared/Chip";
+import { ToastProvider } from "./components/shared/Toast/ToastProvider";
+import Testing from "./components/Test/Testing";
 import { useState } from "react";
-import LoginForm from "./component/shared/Formik/LoginForm";
+import LoginForm from "./components/shared/Formik/LoginForm";
 function App() {
   const [loading, setLoading] = useState(false);
 
