@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import axiosInstance from "Axios-utils";
+import axiosInstance from "utils";
 import { useToast } from "@components/Toast/useToast";
 
 export const useAxios = ({

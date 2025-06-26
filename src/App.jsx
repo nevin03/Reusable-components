@@ -30,7 +30,6 @@ function App() {
     setLoading(false);
   };
 
-  // ✅ Define your tab contents
   const tabItems = [
     {
       label: "Overview",
@@ -101,7 +100,6 @@ function App() {
         <Chip label="Open Source" color="red" />
       </div>
 
-      {/* ✅ Reusable Tabs Component */}
       <Tabs tabs={tabItems} defaultIndex={0} />
     </div>
   );

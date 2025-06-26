@@ -1,4 +1,3 @@
-// src/Axios-utils/interceptors.js
 const setupInterceptors = (axiosInstance) => {
   axiosInstance.interceptors.request.use(
     (config) => {
@@ -12,7 +11,6 @@ const setupInterceptors = (axiosInstance) => {
   axiosInstance.interceptors.response.use(
     (response) => response,
     (error) => {
-      // No useToast here – let UI handle toasts
       return Promise.reject(error);
     }
   );
