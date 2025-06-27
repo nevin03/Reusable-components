@@ -14,6 +14,10 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "src/components/shared"),
       "@test": path.resolve(__dirname, "src/components/Test"),
       "@formik": path.resolve(__dirname, "src/components/shared/Formik"),
+      "@contexts": path.resolve(__dirname, "src/contexts"),
+      "@utils": path.resolve(__dirname, "src/utils"),
+      "@hooks": path.resolve(__dirname, "src/hooks"),
+      "@assets": path.resolve(__dirname, "src/assets"),
     },
   },
 });
