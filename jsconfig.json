@@ -1,11 +1,16 @@
 {
-    "compilerOptions": {
-      "baseUrl": "src",
-      "paths": {
-        "@components/*": ["components/shared/*"],
-        "@test/*": ["components/Test/*"],
-        "@formik/*": ["components/shared/Formik/*"]
-      }
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@components/*": ["components/shared/*"],
+      "@formik/*": ["components/shared/Formik/*"],
+      "@test/*": ["components/Test/*"],
+      "@contexts/*": ["contexts/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@assets/*": ["assets/*"]
     }
-  }
-  
+  },
+  "include": ["src"]
+}
