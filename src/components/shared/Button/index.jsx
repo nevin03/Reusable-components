@@ -1,16 +1,17 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-
 const variantStyles = {
   contained: {
     primary: "bg-primary-600 text-white hover:bg-primary-700",
     secondary: "bg-secondary-600 text-white hover:bg-secondary-700",
     tertiary: "bg-tertiary-600 text-white hover:bg-tertiary-700",
+    red: "bg-red-600 text-white hover:bg-red-700",
   },
   text: {
     primary: "text-primary-600 hover:underline",
     secondary: "text-secondary-600 hover:underline",
     tertiary: "text-tertiary-600 hover:underline",
+    red: "text-red-600 hover:underline",
   },
   rounded: {
     primary:
@@ -19,6 +20,7 @@ const variantStyles = {
       "bg-secondary-100 text-secondary-700 rounded-full hover:bg-secondary-200",
     tertiary:
       "bg-tertiary-100 text-tertiary-700 rounded-full hover:bg-tertiary-200",
+    red: "bg-red-100 text-red-700 rounded-full hover:bg-red-200",
   },
 };
 
