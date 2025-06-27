@@ -1,17 +1,19 @@
 import PropTypes from "prop-types";
 
 const variants = {
-  h1: "text-4xl font-bold",
-  h2: "text-3xl font-semibold",
-  h3: "text-2xl font-semibold",
-  h4: "text-xl font-medium",
-  p: "text-base",
-  small: "text-sm text-gray-600",
+  title: "text-4xl font-bold",
+  subtitle1: "text-2xl font-semibold",
+  subtitle2: "text-xl font-medium",
+  body1: "text-base",
+  body2: "text-sm",
+  caption: "text-xs text-gray-500",
+  base: "text-base",
 };
 
-function Typography({ variant = "p", children, className = "", ...rest }) {
-  const Component = variant === "p" || variant === "small" ? "p" : variant;
-  const style = `${variants[variant]} ${className}`;
+function Typography({ variant = "base", children, className = "", ...rest }) {
+  const Component = "p";
+  const style = `${variants[variant] || variants.base} ${className}`;
+
   return (
     <Component className={style} {...rest}>
       {children}
@@ -20,8 +22,17 @@ function Typography({ variant = "p", children, className = "", ...rest }) {
 }
 
 Typography.propTypes = {
-  variant: PropTypes.oneOf(["h1", "h2", "h3", "h4", "p", "small"]),
+  variant: PropTypes.oneOf([
+    "title",
+    "subtitle1",
+    "subtitle2",
+    "body1",
+    "body2",
+    "caption",
+    "base",
+  ]),
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 };
+
 export default Typography;
