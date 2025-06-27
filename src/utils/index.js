@@ -1,8 +1,8 @@
 import axios from "axios";
-import setupInterceptors from "./interceptors";
+import setupInterceptors from "axios/interceptors";
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "https://api.example.com",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   timeout: 10000,
 });
 
