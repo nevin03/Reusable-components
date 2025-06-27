@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "@components/Button";
 import Typography from "@components/Typography";
 import Input from "@components/Input";
@@ -9,9 +9,26 @@ import Accordion from "@components/Accordion";
 import Tree from "@components/Tree";
 import Chip from "@components/Chip";
 import { Tabs } from "@components/Tabs";
+import { useAuth } from "hooks/useAuth";
 
 function App() {
   const [loading, setLoading] = useState(false);
+  const { login, logout } = useAuth();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (token) {
+      login({
+        user: null,
+        token,
+      });
+      console.log("✅ Token found, user logged in");
+    } else {
+      logout();
+      console.log("❌ No token found, user logged out");
+    }
+  }, [login, logout]);
 
   const treeData = [
     {
@@ -87,10 +104,19 @@ function App() {
         <Radio name="plan" id="basic" value="basic" label="Basic Plan" />
         <Radio name="plan" id="pro" value="pro" label="Pro Plan" />
       </div>
+      <div className="max-w-md mx-auto mt-10">
+        <Accordion title="Main Accordion">
+          <p>This is the content of the main accordion.</p>
 
-      <Accordion title="Click to expand">
-        This is the hidden content inside the accordion.
-      </Accordion>
+          <Accordion title="Sub Accordion 1">
+            <p>This is inside Sub Accordion 1.</p>
+          </Accordion>
+
+          <Accordion title="Sub Accordion 2">
+            <p>This is inside Sub Accordion 2.</p>
+          </Accordion>
+        </Accordion>
+      </div>
 
       <Tree data={treeData} />
 
