@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 import useAuthStore from "./store/useAuthStore";
+import { ToastProvider } from "./contexts/ToastProvider.jsx";
 
 const token = localStorage.getItem("token");
 if (token) {
@@ -11,7 +12,9 @@ if (token) {
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ToastProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ToastProvider>
 );
