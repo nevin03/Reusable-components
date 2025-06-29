@@ -4,8 +4,8 @@
     "paths": {
       "@/*": ["*"],
       "@components/*": ["components/shared/*"],
-      "@formik/*": ["components/shared/Formik/*"],
       "@test/*": ["components/Test/*"],
+      "@formik/*": ["components/shared/Formik/*"],
       "@contexts/*": ["contexts/*"],
       "@utils/*": ["utils/*"],
       "@hooks/*": ["hooks/*"],
